@@ -1,0 +1,170 @@
+
+.cat-icon {
+    cursor: pointer;
+    z-index: 4;
+    position: absolute;
+    right: 10px;
+    bottom: 20px;
+    background-color: transparent;
+    width: 100px;
+    height: 80px;
+    transform: scale(1.0);
+    transition: all 0.4s ease-in-out;
+}
+.cat-icon:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+.cat-icon:hover > .miau {
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+.head {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+}
+.l-ear {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    width: 0;
+     height: 0;
+     border-top: 10px solid transparent;
+     border-right: 20px solid black;
+     border-bottom: 10px solid transparent;
+     transform: rotate(50deg);
+}
+.r-ear {
+    position: absolute;
+    top: 12px;
+    left: 40px;
+    width: 0;
+     height: 0;
+     border-top: 10px solid transparent;
+     border-right: 20px solid black;
+     border-bottom: 10px solid transparent;
+     transform: rotate(5deg);
+}
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes twitch {
+    0% {
+        transform: rotate(10deg);
+    } 
+    100% {
+        transform: rotate(15deg);
+    }
+}
+.l-eye {
+    position: absolute;
+    top: 32px;
+    left: 42px;
+    background-color: rgb(190, 105, 0);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    animation: blink 4s ease-in alternate infinite;
+}
+.r-eye {
+    position: absolute;
+    top: 32px;
+    left: 24px;
+    background-color: rgb(190, 105, 0);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    animation: blink 4s ease-in alternate infinite;
+}
+.body {
+    position: absolute;
+    top: 40px;
+    left: 34px;
+    width: 55px;
+    height: 36px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 20px;
+    background-color: black;
+}
+.hair-1 {
+    position: absolute;
+    top: 45px;
+    left: 17px;
+    background-color: darkgrey;
+    width: 18px;
+    height: 1px;
+    transform-origin: 100%;
+    transform: rotate(10deg);
+    /* animation: twitch 5s ease linear infinite; */
+}
+.hair-2 {
+    position: absolute;
+    top: 44px;
+    left: 37px;
+    background-color: darkgrey;
+    width: 18px;
+    height: 1px;
+    transform: rotate(-10deg);  
+}
+.hair-3 {
+    position: absolute;
+    top: 47px;
+    left: 17px;
+    background-color: darkgrey;
+    width: 18px;
+    height: 1px;
+    transform: rotate(2deg);  
+}
+.hair-4 {
+    position: absolute;
+    top: 47px;
+    left: 37px;
+    background-color: darkgrey;
+    width: 18px;
+    height: 1px;
+    transform: rotate(-5deg);  
+}
+.miau {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70px;
+    height: 34px;
+    padding: 4px;
+    border: solid 1px grey;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    border-top-right-radius: 17px;
+    color: black;
+    background-color: white;
+    content: "Miau";
+    transform: translateX(-40px) translateY(-24px);
+    transition: opacity 0.1s ease-in-out;
+}
+/* 
+.path {
+    stroke-dasharray: 100;
+    animation: dash 3s linear infinite;
+  }
+  
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 200;
+    }
+  } */

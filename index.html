@@ -1,13 +1,553 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/img/favicon-32x32.ico" sizes="32x32">
+  <link rel="icon" href="/img/favicon-96x96.ico" sizes="96x96">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KTauchert - Dev</title>
+
+  <!-- <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cat.css"> -->
+</head>
+
+<body>
+  <div class="absolute">
+    <div class="container">
+      <header class="profile-header">
+        <img class="landing-page__profile-pic" src="img/profile-pic-25p.jpg" alt="profile picture">
+        <div class="cat-icon">
+          <div class="head"></div>
+          <div class="l-ear"></div>
+          <div class="r-ear"></div>
+          <div class="l-eye"></div>
+          <div class="r-eye"></div>
+          <div class="body"></div>
+          <div class="hair-1"></div>
+          <div class="hair-2"></div>
+          <div class="hair-3"></div>
+          <div class="hair-4"></div>
+          <div class="miau">"Miau"</div>
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li id="about">/about</li>
+          <li id="contact">/contact</li>
+          <!-- Porjects as windows to be popened -->
+          <li id="impressum">/impressum</li>
+        </ul>
+      </nav>
+
+      <main>
+        <h1>ktauchert-dev:$<span class="cursor">|</span></h1>
+        <p>
+        <h2>Auswahl an Pojekten</h2>
+        <ul>
+          <li id="ahp">/ahp-plattform</li>
+          <li id="asik">/asik-tool</li>
+          <li id="manuthetic">/manuthetic</li>
+          <li id="open-darkness">/openDarkness</li>
+          <li id="diverse">/diverse</li>
+        </ul>
+        </p>
+      </main>
+    </div>
+  </div>
+
+  <div class="hidden">
+    <div id="about-content">
+      <section id="about-section">
+        <header id="about-title">
+          <h2>about-me:$<span class="cursor">|</span></h2>
+        </header>{
+        <main class="list" id="ahp-description">
+
+          <p>
+            Hi, ich bin Karsten Tauchert und ich programmiere seit 6 Jahren an der Universität Potsdam (am
+            Lehrstuhl für Wirtschaftsinformatik).
+          </p>
+          <p>
+            Sprachen, die ich besonders gut beherrsche sind: Javascript, PHP und Python (Deutsch und
+            Englisch natürlich auch)
+          </p>
+          <p>
+            Ich entwickele Webseiten und Mobile-App-Lösungen in Fullstack-Manier.
+          </p>
+
+        </main>}
+        <footer id="ahp-links">
+          <h2>Links</h2>
+          {
+          <ul class="list">
+            <li><a href="https://lswi.de/lehrstuhl/personen/studentische-mitarbeiter/karsten-tauchert" target="_blank"
+                rel="noopener noreferrer">Lehrstuhl-Präsenz</a></li>
+          </ul>
+          }
+        </footer>
+      </section>
+
+    </div>
+    <div id="contact-content">
+      <section id="ahp-section">
+        <header id="ahp-title">
+          <h2>contact-me:$<span class="cursor">|</span></h2>
+        </header>
+        {
+        <main id="ahp-description">
+          <p>
+            Ihr erreicht mich unter der E-Mail unten (Telefonnummer nach Anfrage).
+          </p>
+        </main>
+        }
+        <footer id="ahp-links">
+          <h2>Email</h2>
+          {
+          <ul class="list">
+            <li><a href="mailto:developer@ktauchert.de">developer@ktauchert.de</a></li>
+          </ul>
+          }
+        </footer>
+      </section>
+    </div>
+
+    <!-- Projekte -->
+    <div id="ahp-content">
+      <section id="ahp-section">
+        <header id="ahp-title">
+          <h2>ahp-plattform:$<span class="cursor">|</span></h2>
+        </header>
+        <main id="ahp-description">
+          <h2>Stack</h2>{
+          <ul class="list">
+            <li class="list-item">LAMP</li>
+            <li class="list-item">Javascript, JQuery</li>
+            <li class="list-item">Bootstrap</li>
+          </ul>
+          }
+          <h2>Content</h2>{
+          <p class="list">
+            Eine Plattform zum Bewerten von Gruppenleistung, anhand von den Bewertungen der Gruppenmitgliedern
+            untereinander. Implementierung von drei Rollen: Admin, Tutor und Student.
+          </p>
+          }
+        </main>
+        <footer id="ahp-links">
+          <h2>Links</h2>{
+          <ul class="list">
+            <li class="list-item"><a href="https://ahp.lswi.de/" target="_blank" rel="noopener noreferrer">AHP-Tool</a>
+            </li>
+          </ul>
+          }
+        </footer>
+      </section>
+    </div>
+    <div id="asik-content">
+      <!-- <h2>asik-tool:$<span class="cursor">|</span></h2> -->
+      <section id="ahp-section">
+        <header id="asik-title">
+          <h2>asik-tool:$<span class="cursor">|</span></h2>
+        </header>
+        <main id="asik-description">
+          <h2>Stack</h2> {
+          <ul class="list">
+            <li class="list-item">LAMP</li>
+            <li class="list-item">ReactJs</li>
+            <li class="list-item">MaterialUI</li>
+          </ul>
+          }
+          <h2>Content</h2>{
+          <p class="list">
+            Eine Plattform mit Spielifizierungselementen (Medaillen, Punkte, Rangliste) für Benutzer einer
+            Gruppe (Firma) und Adminaccount.
+          </p>
+          }
+
+        </main>
+        <footer id="asik-links">
+          <h2>Links</h2>{
+          <ul class="list">
+            <li><a href="https://asiktool.lswi.de/" target="_blank" rel="noopener noreferrer">ASIK-Plattform</a></li>
+            <li><a href="https://lswi.de/forschung/forschungsprojekte/asik-adaptive-spielifizierung-im-kvp"
+                target="_blank" rel="noopener noreferrer">Projekt-Seite</a></li>
+
+          </ul>
+          }
+        </footer>
+      </section>
+    </div>
+    <div id="manuthetic-content">
+      <section id="ahp-section">
+        <header id="ahp-title">
+          <h2>manuthetic:$<span class="cursor">|</span></h2>
+        </header>
+        <main id="ahp-description">
+          <h2>Stack</h2>{
+          <ul class="list">
+            <li class="list-item">LAMP</li>
+            <li class="list-item">Javascript, JQuery</li>
+            <li class="list-item">Bootstrap</li>
+            <li class="list-item">JQuery-UI (-Mobile)</li>
+          </ul>
+          }
+          <h2>Content</h2>{
+          <p class="list">
+            Erstens: Oberflächen für eine Fabrikanlage die den Prozess des Herstellens einer Protese Simuliert.
+          </p>
+          <p class="list">
+            Zweitens: Diese Oberflächen in eine Übungsplattform integriert, damit der Präsenzprozess Zuhause trainiert
+            werden kann.
+          </p>
+          }
+        </main>
+        <footer id="ahp-links">
+          <h2>Links</h2>{
+          <ul class="list">
+            <li class="list-item"><a
+                href="https://lswi.de/forschung/forschungsprojekte/intentional-forgetting-in-organisationen-manuthetics"
+                target="_blank" rel="noopener noreferrer">Projekt-Seite</a></li>
+          </ul>
+          }
+        </footer>
+      </section>
+    </div>
+    <div id="open-darkness-content">
+      <section id="ahp-section">
+        <header id="ahp-title">
+          <h2>open-darkness:$<span class="cursor">|</span></h2>
+        </header>
+        <main id="ahp-description">
+          <h2>Stack</h2>{
+          <ul class="list">
+            <li class="list-item">LAMP</li>
+            <li class="list-item">Python</li>
+            <li class="list-item">TKinter</li>
+          </ul>
+          }
+          <h2>Content</h2>{
+          <p class="list">
+            Eine Software-Plattform für Windows und Mac, die den Innovationsprozess für KMU erleichtern soll.
+            Fragebogen, Bewertung dieses und ausführliche Darstellung der Auswertungen.
+          </p>
+          }
+        </main>
+        <footer id="ahp-links">
+          <h2>Links</h2>{
+          <ul class="list">
+            <li class="list-item"><a
+                href="https://lswi.de/forschung/forschungsprojekte/open-darkness-dark-side-of-open-innovation"
+                target="_blank" rel="noopener noreferrer">Projekt-Seite</a></li>
+          </ul>
+          }
+        </footer>
+      </section>
+    </div>
+    <div id="diverse-content">
+      <section id="blog-section">
+        <header id="blog-title">
+          <h2>blog:$<span class="cursor">|</span></h2>
+        </header>
+        <main id="blog-description">
+          <h2>Stack</h2>{
+          <ul class="list">
+            <li class="list-item">LAMP</li>
+            <li class="list-item">Bootstrap</li>
+            <li class="list-item">Eigenes MVC-Framework (nach Traversy)</li>
+          </ul>
+          }
+          <h2>Content</h2>{
+          <p class="list">
+            Ein Blog mit Bildern und Texten. Anmeldung und Registrierung.
+          </p>
+          }
+        </main>
+        <footer id="blog-links">
+          <h2>Links</h2>{
+          <ul class="list">
+            <li class="list-item"><a href="https://schauwiediebaeumelaufen.de/" target="_blank"
+                rel="noopener noreferrer">Schau, wie die Bäume laufen...</a></li>
+          </ul>
+          }
+        </footer>
+      </section>
+      <section id="montage-section">
+        <header id="montage-title">
+          <h2>montage:$<span class="cursor">|</span></h2>
+        </header>
+        <main id="montage-description">
+          <h2>Stack</h2>{
+          <ul class="list">
+            <li class="list-item">LAMP</li>
+            <li class="list-item">React Native</li>
+            <li class="list-item">MaterialUI</li>
+          </ul>
+          }
+          <h2>Content</h2>{
+          <p class="list">
+            Eine Plattform fürs iPad, die den Montageprozess kontrolliert und überwacht. (nicht öffentlich)
+          </p>
+          }
+        </main>
+      </section>
+    </div>
+    <div id="impressum-content">
+      <section id="rights">
+        <header>
+          <h5>Rechtliches</h5>
+        </header>
+        <div>
+          <h1>Datenschutz&shy;erkl&auml;rung</h1>
+          <h2>1. Datenschutz auf einen Blick</h2>
+          <h3>Allgemeine Hinweise</h3>
+          <p>Die folgenden Hinweise geben einen einfachen &Uuml;berblick dar&uuml;ber, was mit Ihren personenbezogenen
+            Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie
+            pers&ouml;nlich identifiziert werden k&ouml;nnen. Ausf&uuml;hrliche Informationen zum Thema Datenschutz
+            entnehmen Sie unserer unter diesem Text aufgef&uuml;hrten Datenschutzerkl&auml;rung.</p>
+          <h3>Datenerfassung auf dieser Website</h3>
+          <h4>Wer ist verantwortlich f&uuml;r die Datenerfassung auf dieser Website?</h4>
+          <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten
+            k&ouml;nnen Sie dem Abschnitt &bdquo;Hinweis zur Verantwortlichen Stelle&ldquo; in dieser
+            Datenschutzerkl&auml;rung entnehmen.</p>
+          <h4>Wie erfassen wir Ihre Daten?</h4>
+          <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.&nbsp;B.
+            um Daten handeln, die Sie in ein Kontaktformular eingeben.</p>
+          <p>Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere
+            IT-Systeme erfasst. Das sind vor allem technische Daten (z.&nbsp;B. Internetbrowser, Betriebssystem oder
+            Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website
+            betreten.</p>
+          <h4>Wof&uuml;r nutzen wir Ihre Daten?</h4>
+          <p>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gew&auml;hrleisten.
+            Andere Daten k&ouml;nnen zur Analyse Ihres Nutzerverhaltens verwendet werden.</p>
+          <h4>Welche Rechte haben Sie bez&uuml;glich Ihrer Daten?</h4>
+          <p>Sie haben jederzeit das Recht, unentgeltlich Auskunft &uuml;ber Herkunft, Empf&auml;nger und Zweck Ihrer
+            gespeicherten personenbezogenen Daten zu erhalten. Sie haben au&szlig;erdem ein Recht, die Berichtigung oder
+            L&ouml;schung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben,
+            k&ouml;nnen Sie diese Einwilligung jederzeit f&uuml;r die Zukunft widerrufen. Au&szlig;erdem haben Sie das
+            Recht, unter bestimmten Umst&auml;nden die Einschr&auml;nkung der Verarbeitung Ihrer personenbezogenen Daten
+            zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zust&auml;ndigen Aufsichtsbeh&ouml;rde
+            zu.</p>
+          <p>Hierzu sowie zu weiteren Fragen zum Thema Datenschutz k&ouml;nnen Sie sich jederzeit an uns wenden.</p>
+          <h2>2. Hosting und Content Delivery Networks (CDN)</h2>
+          <h3>Externes Hosting</h3>
+          <p>Diese Website wird bei einem externen Dienstleister gehostet (Hoster). Die personenbezogenen Daten, die auf
+            dieser Website erfasst werden, werden auf den Servern des Hosters gespeichert. Hierbei kann es sich v. a. um
+            IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen,
+            Websitezugriffe und sonstige Daten, die &uuml;ber eine Website generiert werden, handeln.</p>
+          <p>Der Einsatz des Hosters erfolgt zum Zwecke der Vertragserf&uuml;llung gegen&uuml;ber unseren potenziellen
+            und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und
+            effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit.
+            f DSGVO).</p>
+          <p>Unser Hoster wird Ihre Daten nur insoweit verarbeiten, wie dies zur Erf&uuml;llung seiner
+            Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Daten befolgen.</p>
+          <p>Wir setzen folgenden Hoster ein:</p>
+          <p>
+            STRATO AG <br />
+            Sitz der Aktiengesellschaft <br />
+            Pascalstraße 10 <br />
+            10587 Berlin<br />
+            Telefon: 030-300 146 0 <br />
+            E-Mail-Kontakt: impressum@strato.de <br />
+            Registergericht: Berlin Charlottenburg HRB 79450 <br />
+            USt-ID-Nr.:DE 211 045 709
+          </p>
+          <h4>Abschluss eines Vertrages &uuml;ber Auftragsverarbeitung</h4>
+          <p>Um die datenschutzkonforme Verarbeitung zu gew&auml;hrleisten, haben wir einen Vertrag &uuml;ber
+            Auftragsverarbeitung mit unserem Hoster geschlossen.</p>
+          <h2>3. Allgemeine Hinweise und Pflicht&shy;informationen</h2>
+          <h3>Datenschutz</h3>
+          <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer pers&ouml;nlichen Daten sehr ernst. Wir behandeln Ihre
+            personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser
+            Datenschutzerkl&auml;rung.</p>
+          <p>Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten
+            sind Daten, mit denen Sie pers&ouml;nlich identifiziert werden k&ouml;nnen. Die vorliegende
+            Datenschutzerkl&auml;rung erl&auml;utert, welche Daten wir erheben und wof&uuml;r wir sie nutzen. Sie
+            erl&auml;utert auch, wie und zu welchem Zweck das geschieht.</p>
+          <p>Wir weisen darauf hin, dass die Daten&uuml;bertragung im Internet (z.&nbsp;B. bei der Kommunikation per
+            E-Mail) Sicherheitsl&uuml;cken aufweisen kann. Ein l&uuml;ckenloser Schutz der Daten vor dem Zugriff durch
+            Dritte ist nicht m&ouml;glich.</p>
+          <h3>Hinweis zur verantwortlichen Stelle</h3>
+          <p>Die verantwortliche Stelle f&uuml;r die Datenverarbeitung auf dieser Website ist:</p>
+          <p>
+            Karsten Tauchert <br />
+            c/o Block Services <br />
+            Stuttgarter Str. 106 <br />
+            70736 Fellbach <br />
+            <a href="mailto:webmaster@ktauchert.de">webmaster@ktauchert.de</a><br>
+          </p>
+          <p>Verantwortliche Stelle ist die nat&uuml;rliche oder juristische Person, die allein oder gemeinsam mit
+            anderen &uuml;ber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen,
+            E-Mail-Adressen o. &Auml;.) entscheidet.</p>
+
+          <h3>Speicherdauer</h3>
+          <p>Soweit innerhalb dieser Datenschutzerkl&auml;rung keine speziellere Speicherdauer genannt wurde, verbleiben
+            Ihre personenbezogenen Daten bei uns, bis der Zweck f&uuml;r die Datenverarbeitung entf&auml;llt. Wenn Sie
+            ein berechtigtes L&ouml;schersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen,
+            werden Ihre Daten gel&ouml;scht, sofern wir keinen anderen rechtlich zul&auml;ssigen&nbsp; Gr&uuml;nde
+            f&uuml;r die Speicherung Ihrer personenbezogenen Daten haben (z.B. steuer- oder handelsrechtliche
+            Aufbewahrungsfristen); im letztgenannten Fall erfolgt die L&ouml;schung nach Fortfall dieser Gr&uuml;nde.
+          </p>
+          <h3>Hinweis zur Datenweitergabe in die USA</h3>
+          <p>Auf unserer Website sind unter anderem Tools von Unternehmen mit Sitz in den USA eingebunden. Wenn diese
+            Tools aktiv sind, k&ouml;nnen Ihre personenbezogenen Daten an die US-Server der jeweiligen Unternehmen
+            weitergegeben werden. Wir weisen darauf hin, dass die USA kein sicherer Drittstaat im Sinne des
+            EU-Datenschutzrechts sind. US-Unternehmen sind dazu verpflichtet, personenbezogene Daten an
+            Sicherheitsbeh&ouml;rden herauszugeben, ohne dass Sie als Betroffener hiergegen gerichtlich vorgehen
+            k&ouml;nnten. Es kann daher nicht ausgeschlossen werden, dass US-Beh&ouml;rden (z.B. Geheimdienste) Ihre auf
+            US-Servern befindlichen Daten zu &Uuml;berwachungszwecken verarbeiten, auswerten und dauerhaft speichern.
+            Wir haben auf diese Verarbeitungst&auml;tigkeiten keinen Einfluss.</p>
+          <h3>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
+          <p>Viele Datenverarbeitungsvorg&auml;nge sind nur mit Ihrer ausdr&uuml;cklichen Einwilligung m&ouml;glich. Sie
+            k&ouml;nnen eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtm&auml;&szlig;igkeit der bis
+            zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unber&uuml;hrt.</p>
+          <h3>Widerspruchsrecht gegen die Datenerhebung in besonderen F&auml;llen sowie gegen Direktwerbung (Art. 21
+            DSGVO)</h3>
+          <p>WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT
+            DAS RECHT, AUS GR&Uuml;NDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER
+            PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH F&Uuml;R EIN AUF DIESE BESTIMMUNGEN
+            GEST&Uuml;TZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE
+            DIESER DATENSCHUTZERKL&Auml;RUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN
+            PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR K&Ouml;NNEN ZWINGENDE SCHUTZW&Uuml;RDIGE
+            GR&Uuml;NDE F&Uuml;R DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN &Uuml;BERWIEGEN
+            ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUS&Uuml;BUNG ODER VERTEIDIGUNG VON RECHTSANSPR&Uuml;CHEN
+            (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).</p>
+          <p>WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT,
+            JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER
+            WERBUNG EINZULEGEN; DIES GILT AUCH F&Uuml;R DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG
+            STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER
+            DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).</p>
+          <h3>Beschwerde&shy;recht bei der zust&auml;ndigen Aufsichts&shy;beh&ouml;rde</h3>
+          <p>Im Falle von Verst&ouml;&szlig;en gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer
+            Aufsichtsbeh&ouml;rde, insbesondere in dem Mitgliedstaat ihres gew&ouml;hnlichen Aufenthalts, ihres
+            Arbeitsplatzes oder des Orts des mutma&szlig;lichen Versto&szlig;es zu. Das Beschwerderecht besteht
+            unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.</p>
+          <h3>Recht auf Daten&shy;&uuml;bertrag&shy;barkeit</h3>
+          <p>Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erf&uuml;llung eines Vertrags
+            automatisiert verarbeiten, an sich oder an einen Dritten in einem g&auml;ngigen, maschinenlesbaren Format
+            aush&auml;ndigen zu lassen. Sofern Sie die direkte &Uuml;bertragung der Daten an einen anderen
+            Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.</p>
+          <h3>Auskunft, L&ouml;schung und Berichtigung</h3>
+          <p>Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft
+            &uuml;ber Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empf&auml;nger und den Zweck der
+            Datenverarbeitung und ggf. ein Recht auf Berichtigung oder L&ouml;schung dieser Daten. Hierzu sowie zu
+            weiteren Fragen zum Thema personenbezogene Daten k&ouml;nnen Sie sich jederzeit an uns wenden.</p>
+          <h3>Recht auf Einschr&auml;nkung der Verarbeitung</h3>
+          <p>Sie haben das Recht, die Einschr&auml;nkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.
+            Hierzu k&ouml;nnen Sie sich jederzeit an uns wenden. Das Recht auf Einschr&auml;nkung der Verarbeitung
+            besteht in folgenden F&auml;llen:</p>
+          <ul>
+            <li>Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, ben&ouml;tigen
+              wir in der Regel Zeit, um dies zu &uuml;berpr&uuml;fen. F&uuml;r die Dauer der Pr&uuml;fung haben Sie das
+              Recht, die Einschr&auml;nkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+            <li>Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtm&auml;&szlig;ig geschah/geschieht,
+              k&ouml;nnen Sie statt der L&ouml;schung die Einschr&auml;nkung der Datenverarbeitung verlangen.</li>
+            <li>Wenn wir Ihre personenbezogenen Daten nicht mehr ben&ouml;tigen, Sie sie jedoch zur Aus&uuml;bung,
+              Verteidigung oder Geltendmachung von Rechtsanspr&uuml;chen ben&ouml;tigen, haben Sie das Recht, statt der
+              L&ouml;schung die Einschr&auml;nkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+            <li>Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abw&auml;gung zwischen
+              Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen
+              &uuml;berwiegen, haben Sie das Recht, die Einschr&auml;nkung der Verarbeitung Ihrer personenbezogenen
+              Daten zu verlangen.</li>
+          </ul>
+          <p>Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschr&auml;nkt haben, d&uuml;rfen diese Daten
+            &ndash; von ihrer Speicherung abgesehen &ndash; nur mit Ihrer Einwilligung oder zur Geltendmachung,
+            Aus&uuml;bung oder Verteidigung von Rechtsanspr&uuml;chen oder zum Schutz der Rechte einer anderen
+            nat&uuml;rlichen oder juristischen Person oder aus Gr&uuml;nden eines wichtigen &ouml;ffentlichen Interesses
+            der Europ&auml;ischen Union oder eines Mitgliedstaats verarbeitet werden.</p>
+          <h2>4. Datenerfassung auf dieser Website</h2>
+          <h3>Cookies</h3>
+          <p>Unsere Internetseiten verwenden so genannte &bdquo;Cookies&ldquo;. Cookies sind kleine Textdateien und
+            richten auf Ihrem Endger&auml;t keinen Schaden an. Sie werden entweder vor&uuml;bergehend f&uuml;r die Dauer
+            einer Sitzung (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endger&auml;t gespeichert.
+            Session-Cookies werden nach Ende Ihres Besuchs automatisch gel&ouml;scht. Permanente Cookies bleiben auf
+            Ihrem Endger&auml;t gespeichert, bis Sie diese selbst l&ouml;schen&nbsp;oder eine automatische L&ouml;schung
+            durch Ihren Webbrowser erfolgt.</p>
+          <p>Teilweise k&ouml;nnen auch Cookies von Drittunternehmen auf Ihrem Endger&auml;t gespeichert werden, wenn
+            Sie unsere Seite betreten (Third-Party-Cookies). Diese erm&ouml;glichen uns oder Ihnen die Nutzung
+            bestimmter Dienstleistungen des Drittunternehmens (z.B. Cookies zur Abwicklung von
+            Zahlungsdienstleistungen).</p>
+          <p>Cookies haben verschiedene Funktionen. Zahlreiche Cookies sind technisch notwendig, da bestimmte
+            Websitefunktionen ohne diese nicht funktionieren w&uuml;rden (z.B. die Warenkorbfunktion oder die Anzeige
+            von Videos). Andere Cookies dienen dazu, das Nutzerverhalten auszuwerten&nbsp;oder Werbung anzuzeigen.</p>
+          <p>Cookies, die zur Durchf&uuml;hrung des elektronischen Kommunikationsvorgangs (notwendige Cookies) oder zur
+            Bereitstellung bestimmter, von Ihnen erw&uuml;nschter Funktionen (funktionale Cookies, z. B. f&uuml;r die
+            Warenkorbfunktion) oder zur Optimierung der Website (z.B. Cookies zur Messung des Webpublikums) erforderlich
+            sind, werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert, sofern keine andere Rechtsgrundlage
+            angegeben wird. Der Websitebetreiber hat ein berechtigtes Interesse an der Speicherung von Cookies zur
+            technisch fehlerfreien und optimierten Bereitstellung seiner Dienste. Sofern eine Einwilligung zur
+            Speicherung von Cookies abgefragt wurde, erfolgt die Speicherung der betreffenden Cookies
+            ausschlie&szlig;lich auf Grundlage dieser Einwilligung (Art. 6 Abs. 1 lit. a DSGVO); die Einwilligung ist
+            jederzeit widerrufbar.</p>
+          <p>Sie k&ouml;nnen Ihren Browser so einstellen, dass Sie &uuml;ber das Setzen von Cookies informiert werden
+            und Cookies nur im Einzelfall erlauben, die Annahme von Cookies f&uuml;r bestimmte F&auml;lle oder generell
+            ausschlie&szlig;en sowie das automatische L&ouml;schen der Cookies beim Schlie&szlig;en des Browsers
+            aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalit&auml;t dieser Website eingeschr&auml;nkt
+            sein.</p>
+          <p>Soweit Cookies von Drittunternehmen oder zu Analysezwecken eingesetzt werden, werden wir Sie hier&uuml;ber
+            im Rahmen dieser Datenschutzerkl&auml;rung gesondert informieren und ggf. eine Einwilligung abfragen.</p>
+          <h3>Kontaktformular</h3>
+          <p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular
+            inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und f&uuml;r den Fall
+            von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+          <p>Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit
+            der Erf&uuml;llung eines Vertrags zusammenh&auml;ngt oder zur Durchf&uuml;hrung vorvertraglicher
+            Ma&szlig;nahmen erforderlich ist. In allen &uuml;brigen F&auml;llen beruht die Verarbeitung auf unserem
+            berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f
+            DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde.</p>
+          <p>Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur L&ouml;schung
+            auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck f&uuml;r die Datenspeicherung
+            entf&auml;llt (z.&nbsp;B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche
+            Bestimmungen &ndash; insbesondere Aufbewahrungsfristen &ndash; bleiben unber&uuml;hrt.</p>
+          <h3>Anfrage per E-Mail, Telefon oder Telefax</h3>
+          <p>Wenn Sie uns per E-Mail, Telefon oder Telefax kontaktieren, wird Ihre Anfrage inklusive aller daraus
+            hervorgehenden personenbezogenen Daten (Name, Anfrage) zum Zwecke der Bearbeitung Ihres Anliegens bei uns
+            gespeichert und verarbeitet. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.</p>
+          <p>Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit
+            der Erf&uuml;llung eines Vertrags zusammenh&auml;ngt oder zur Durchf&uuml;hrung vorvertraglicher
+            Ma&szlig;nahmen erforderlich ist. In allen &uuml;brigen F&auml;llen beruht die Verarbeitung auf unserem
+            berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f
+            DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde.</p>
+          <p>Die von Ihnen an uns per Kontaktanfragen &uuml;bersandten Daten verbleiben bei uns, bis Sie uns zur
+            L&ouml;schung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck f&uuml;r die
+            Datenspeicherung entf&auml;llt (z.&nbsp;B. nach abgeschlossener Bearbeitung Ihres Anliegens). Zwingende
+            gesetzliche Bestimmungen &ndash; insbesondere gesetzliche Aufbewahrungsfristen &ndash; bleiben
+            unber&uuml;hrt.</p>
+          <h2>5. Plugins und Tools</h2>
+          <h3>Google Web Fonts</h3>
+          <p>Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Web Fonts, die von Google
+            bereitgestellt werden. Beim Aufruf einer Seite l&auml;dt Ihr Browser die ben&ouml;tigten Web Fonts in ihren
+            Browsercache, um Texte und Schriftarten korrekt anzuzeigen.</p>
+          <p>Zu diesem Zweck muss der von Ihnen verwendete Browser Verbindung zu den Servern von Google aufnehmen.
+            Hierdurch erlangt Google Kenntnis dar&uuml;ber, dass &uuml;ber Ihre IP-Adresse diese Website aufgerufen
+            wurde. Die Nutzung von Google WebFonts erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der
+            Websitebetreiber hat ein berechtigtes Interesse an der einheitlichen Darstellung des Schriftbildes auf
+            seiner Website. Sofern eine entsprechende Einwilligung abgefragt wurde (z. B. eine Einwilligung zur
+            Speicherung von Cookies), erfolgt die Verarbeitung ausschlie&szlig;lich auf Grundlage von Art. 6 Abs. 1 lit.
+            a DSGVO; die Einwilligung ist jederzeit widerrufbar.</p>
+          <p>Wenn Ihr Browser Web Fonts nicht unterst&uuml;tzt, wird eine Standardschrift von Ihrem Computer genutzt.
+          </p>
+          <p>Weitere Informationen zu Google Web Fonts finden Sie unter <a
+              href="https://developers.google.com/fonts/faq" target="_blank"
+              rel="noopener noreferrer">https://developers.google.com/fonts/faq</a> und in der Datenschutzerkl&auml;rung
+            von Google: <a href="https://policies.google.com/privacy?hl=de" target="_blank"
+              rel="noopener noreferrer">https://policies.google.com/privacy?hl=de</a>.</p>
+          <!-- <h3>Font Awesome</h3>
+                    <p>Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten und Symbolen Font Awesome. Anbieter ist die Fonticons, Inc., 6 Porter Road Apartment 3R, Cambridge, Massachusetts, USA.</p>
+                    <p>Beim Aufruf einer Seite l&auml;dt Ihr Browser die ben&ouml;tigten Fonts in ihren Browsercache, um Texte, Schriftarten und Symbole korrekt anzuzeigen. Zu diesem Zweck muss der von Ihnen verwendete Browser Verbindung zu den Servern von Font Awesome aufnehmen. Hierdurch erlangt Font Awesome Kenntnis dar&uuml;ber, dass &uuml;ber Ihre IP-Adresse diese Website aufgerufen wurde. Die Nutzung von Font Awesome erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an der einheitlichen Darstellung des Schriftbildes auf unserer Website. Sofern eine entsprechende Einwilligung abgefragt wurde (z. B. eine Einwilligung zur Speicherung von Cookies), erfolgt die Verarbeitung ausschlie&szlig;lich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO; die Einwilligung ist jederzeit widerrufbar.</p>
+                    <p>Wenn Ihr Browser Font Awesome nicht unterst&uuml;tzt, wird eine Standardschrift von Ihrem Computer genutzt.</p>
+                    <p>Weitere Informationen zu Font Awesome finden Sie&nbsp;und in der Datenschutzerkl&auml;rung von Font Awesome unter: <a href="https://fontawesome.com/privacy" target="_blank" rel="noopener noreferrer">https://fontawesome.com/privacy</a>.</p> -->
+          <p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- After build add js folder into root directory, too lazy to check vite stuff with this -->
+  <script src="js/winbox.bundle.js"></script>
+  <!-- <script src="https://rawcdn.githack.com/nextapps-de/winbox/0.2.0/dist/winbox.bundle.js"></script> -->
+  <script type="module" src="/main.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

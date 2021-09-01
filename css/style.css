@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --text-color: #00aa00;
+  --secondary-color: rgb(68, 68, 248);
+  --link-color: rgb(255, 126, 0);
+}
+.absolute {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body {
+  font-family: "Fira Code", monospace;
+  background-color: rgb(34, 34, 34);
+  color: #ccc;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+h1 {
+  color: var(--text-color);
+  font-size: 3rem;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+p {
+  padding-bottom: 15px;
+}
+ul {
+  list-style-type: none;
+}
+header {
+  margin: 20px 0;
+}
+nav {
+  max-width: 100%;
+  min-width: 30%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul li {
+  color: var(--text-color);
+  cursor: pointer;
+}
+ul li {
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+ul li:hover {
+  color: var(--text-color);
+}
+.list {
+  margin-left: 20px;
+}
+.list-item {
+  color: var(--secondary-color);
+  cursor: default;
+}
+.list-item:hover {
+  color: var(--secondary-color);
+  cursor: default;
+}
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+.container {
+  margin: auto auto;
+  max-width: 66vw;
+  height: 70vh;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.hidden {
+  display: none;
+}
+
+.cursor {
+  font-weight: 700;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: var(--text-color);
+  }
+}
+
+.wb-body {
+  background: rgb(8, 8, 8);
+  padding: 20px;
+}
+
+.landing-page__profile-pic {
+  width: 25%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 95vw;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  li {
+    font-size: 0.8rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .container {
+    max-width: 80vw;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  li {
+    font-size: 0.9rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 75vw;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+  li {
+    font-size: 1.1rem;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 66vw;
+  }
+  h1 {
+    font-size: 3.4rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  li {
+    font-size: 1.3rem;
+  }
+}
