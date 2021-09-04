@@ -149,38 +149,38 @@ function animate() {
     const { color } = intersects[0].object.geometry.attributes;
 
     // RGB Red
-    color.setX(intersects[0].face.a, HOVER_COLOR.r);
-    color.setX(intersects[0].face.b, HOVER_COLOR.r);
-    color.setX(intersects[0].face.c, HOVER_COLOR.r);
+    // color.setX(intersects[0].face.a, HOVER_COLOR.r);
+    // color.setX(intersects[0].face.b, HOVER_COLOR.r);
+    // color.setX(intersects[0].face.c, HOVER_COLOR.r);
 
-    // RGB Green
-    color.setY(intersects[0].face.a, HOVER_COLOR.g);
-    color.setY(intersects[0].face.b, HOVER_COLOR.g);
-    color.setY(intersects[0].face.c, HOVER_COLOR.g);
+    // // RGB Green
+    // color.setY(intersects[0].face.a, HOVER_COLOR.g);
+    // color.setY(intersects[0].face.b, HOVER_COLOR.g);
+    // color.setY(intersects[0].face.c, HOVER_COLOR.g);
 
-    // RGB Blue
-    color.setZ(intersects[0].face.a, HOVER_COLOR.b);
-    color.setZ(intersects[0].face.b, HOVER_COLOR.b);
-    color.setZ(intersects[0].face.c, HOVER_COLOR.b);
+    // // RGB Blue
+    // color.setZ(intersects[0].face.a, HOVER_COLOR.b);
+    // color.setZ(intersects[0].face.b, HOVER_COLOR.b);
+    // color.setZ(intersects[0].face.c, HOVER_COLOR.b);
 
-    color.needsUpdate = true;
+    // color.needsUpdate = true;
 
-    setTimeout(() => {
-      color.setX(intersects[0].face.a, INITIAL_COLOR.r);
-      color.setX(intersects[0].face.b, INITIAL_COLOR.r);
-      color.setX(intersects[0].face.c, INITIAL_COLOR.r);
+    // setTimeout(() => {
+    //   color.setX(intersects[0].face.a, INITIAL_COLOR.r);
+    //   color.setX(intersects[0].face.b, INITIAL_COLOR.r);
+    //   color.setX(intersects[0].face.c, INITIAL_COLOR.r);
 
-      // RGB Green
-      color.setY(intersects[0].face.a, INITIAL_COLOR.g);
-      color.setY(intersects[0].face.b, INITIAL_COLOR.g);
-      color.setY(intersects[0].face.c, INITIAL_COLOR.g);
+    //   // RGB Green
+    //   color.setY(intersects[0].face.a, INITIAL_COLOR.g);
+    //   color.setY(intersects[0].face.b, INITIAL_COLOR.g);
+    //   color.setY(intersects[0].face.c, INITIAL_COLOR.g);
 
-      // RGB Blue
-      color.setZ(intersects[0].face.a, INITIAL_COLOR.b);
-      color.setZ(intersects[0].face.b, INITIAL_COLOR.b);
-      color.setZ(intersects[0].face.c, INITIAL_COLOR.b);
-      color.needsUpdate = true;
-    }, 500);
+    //   // RGB Blue
+    //   color.setZ(intersects[0].face.a, INITIAL_COLOR.b);
+    //   color.setZ(intersects[0].face.b, INITIAL_COLOR.b);
+    //   color.setZ(intersects[0].face.c, INITIAL_COLOR.b);
+    //   color.needsUpdate = true;
+    // }, 500);
     // gsap.to(HOVER_COLOR, {
     //   r: INITIAL_COLOR.r,
     //   g: INITIAL_COLOR.g,
