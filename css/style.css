@@ -83,6 +83,11 @@ ul li:hover {
   color: var(--secondary-color);
   cursor: default;
 }
+
+.header-link:hover {
+  color: var(--link-color);
+  cursor: pointer;
+}
 a {
   text-decoration: none;
   color: var(--link-color);

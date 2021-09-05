@@ -17,6 +17,9 @@ const diverseContent = document.querySelector('#diverse-content');
 const impressum = document.querySelector('#impressum');
 const impressumContent = document.querySelector('#impressum-content');
 
+const games = document.querySelector('#games');
+const gamesContent = document.querySelector('#games-content');
+
 const colorFocusOne = '#00aa00';
 const colorFocusTwo = '#4444f8';
 const colorBlur = '#777';
@@ -39,13 +42,13 @@ about.addEventListener('click', () => {
         bottom: windowBottom,
         left: windowLeft,
         mount: aboutContent,
-        onfocus: function (){
+        onfocus: function () {
             this.setBackground(colorFocusOne);
         },
-        onblur: function (){
+        onblur: function () {
             this.setBackground(colorBlur);
         },
-        
+
     })
 })
 contact.addEventListener('click', () => {
@@ -58,10 +61,10 @@ contact.addEventListener('click', () => {
         bottom: windowBottom,
         left: windowLeft,
         mount: contactContent,
-        onfocus: function (){
+        onfocus: function () {
             this.setBackground(colorFocusOne);
         },
-        onblur: function (){
+        onblur: function () {
             this.setBackground(colorBlur);
         },
     })
@@ -77,10 +80,10 @@ ahp.addEventListener('click', () => {
         bottom: windowBottom,
         left: windowLeft,
         mount: ahpContent,
-        onfocus: function (){
+        onfocus: function () {
             this.setBackground(colorFocusTwo);
         },
-        onblur: function (){
+        onblur: function () {
             this.setBackground(colorBlur);
         },
     })
@@ -95,10 +98,10 @@ asik.addEventListener('click', () => {
         bottom: windowBottom,
         left: windowLeft,
         mount: asikContent,
-        onfocus: function (){
+        onfocus: function () {
             this.setBackground(colorFocusTwo);
         },
-        onblur: function (){
+        onblur: function () {
             this.setBackground(colorBlur);
         },
     })
@@ -113,10 +116,10 @@ manuthetic.addEventListener('click', () => {
         bottom: windowBottom,
         left: windowLeft,
         mount: manutheticContent,
-        onfocus: function (){
+        onfocus: function () {
             this.setBackground(colorFocusTwo);
         },
-        onblur: function (){
+        onblur: function () {
             this.setBackground(colorBlur);
         },
     })
@@ -132,10 +135,10 @@ openDarkness.addEventListener('click', () => {
         bottom: windowBottom,
         left: windowLeft,
         mount: openDarknessContent,
-        onfocus: function (){
+        onfocus: function () {
             this.setBackground(colorFocusTwo);
         },
-        onblur: function (){
+        onblur: function () {
             this.setBackground(colorBlur);
         },
     })
@@ -151,10 +154,10 @@ diverse.addEventListener('click', () => {
         bottom: windowBottom,
         left: windowLeft,
         mount: diverseContent,
-        onfocus: function (){
+        onfocus: function () {
             this.setBackground(colorFocusTwo);
         },
-        onblur: function (){
+        onblur: function () {
             this.setBackground(colorBlur);
         },
     })
@@ -170,16 +173,34 @@ impressum.addEventListener('click', () => {
         bottom: windowBottom,
         left: windowLeft,
         mount: impressumContent,
-        onfocus: function (){
+        onfocus: function () {
             this.setBackground(colorFocusTwo);
         },
-        onblur: function (){
+        onblur: function () {
             this.setBackground(colorBlur);
         },
     })
 })
-
-function screenAdjust(){
+games.addEventListener('click', () => {
+    const contentBox = new WinBox({
+        title: 'Games',
+        background: '#00aa00',
+        width: '95%',
+        height: '95%',
+        top: windowTop,
+        right: windowRight,
+        bottom: windowBottom,
+        left: windowLeft,
+        mount: gamesContent,
+        onfocus: function () {
+            this.setBackground(colorFocusTwo);
+        },
+        onblur: function () {
+            this.setBackground(colorBlur);
+        },
+    })
+})
+function screenAdjust() {
     // XS
     if (window.matchMedia('screen and (max-width: 600px)').matches) {
         console.log("media 1");
